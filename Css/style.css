@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+:root {
+  --font: "adobehebrew-regular";
+  --line-height: 30px;
+  --bg-color: black;
+  --border-radius: 10px;
+  --border: ;
+  --border-color: white;
+  --display: ;
+  --colorordo: rgb(154, 240, 252);
+  --colorSangue: white;
+  --colorMorte: white;
+  --colorConhecimento: white;
+  --colorMedo: white;
+  --font-style: oblique;
+  --font-size: 25px;
+}
+.oculto {
+  --font: "estrangeiro";
+  --line-height: 30px;
+  --border: 5px solid;
+  --bg-bg-color: rgba(51, 48, 48, 0.363);
+  --bg-color: rgb(22, 21, 21);
+  --border-color: black;
+  --display: none;
+  --colorordo: rgba(0, 65, 187, 0.705);
+  --colorSangue: rgb(180, 0, 0);
+  --colorMorte: rgb(172, 172, 172);
+  --colorConhecimento: rgb(173, 185, 0);
+  --colorenergia: rgb(148, 0, 104);
+  --colorMedo: rgb(0, 82, 102);
+  --font-size: 25px;
+  }
+@font-face {
+  font-family: "adobehebrew-regular";
+  src: url(./adobehebrew-regular.otf);
+}
+@font-face {
+  font-family: "estrangeiro";
+  src: url(./SinaisEstrangeiro-Regular.ttf);
+}
+body {  
+  background-color:var(--bg-color);
+}
+
+body * {
+  color: white;
+  font-family: var(--font);
+}
+
+#container {
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  margin: auto;
+
+}
+
+#logo-ordo {
+  text-align: center;
+}
+
+#logo-ordo img {
+  width: 50%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#logo-ordo p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+  margin-bottom: 100px;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0;
+}
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: rgb(44, 44, 44);
+  border: 5px solid rgb(170, 146, 11);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+  transition: gray 0.2s;
+}
+
+#simbolos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+#simbolos img {
+  width: 240px;
+  text-align: center;
+}
+#container-descrisao {
+  display: flex;  
+  width: 100%;
+  border: 3px solid var(--border-color);
+  border-radius: var(--border-radius);
+  line-height: var(--line-height);
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+  margin-bottom: 40px;
+}
+
+#descrisao img {
+  width: 150px;
+  text-align: center;
+  font-size: xx-small;
+}
+#descrisao li {
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+
+#sangue {
+  border: var(--border) var(--colorSangue);
+  font-style: var(--font-style);
+  border-radius: var(--border-radius);
+  color: var(--colorSangue);
+  font-size: var(--font-size);
+}
+#morte {
+  border: var(--border) var(--colorMorte);
+  font-style: var(--font-style);
+  color: var(--colorMorte);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+}
+
+#conhecimento {
+  border: var(--border) var(--colorConhecimento);
+  font-style: var(--font-style);
+  color: var(--colorConhecimento);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+}
+#energia {
+  color: var(--colorenergia);
+  font-style: var(--font-style);
+  border: var(--border) var(--colorenergia);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+}
+#medo {
+  border: var(--border) var(--colorMedo);
+  font-style: var(--font-style);
+  color: var(--colorMedo);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+}
+#ordo{
+  border: var(--border) var(--colorordo);
+  font-style: var(--font-style);
+  color: var(--colorordo);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size)
+}
+
+
+t {
+  display: var(--display);
+  color: var(--colorordo);
+}
