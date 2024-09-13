@@ -1,5 +1,5 @@
 function ToggleMode() {
-  const html = document.documentElement
+  const html = document.documentElement  
   html.classList.toggle("oculto")
 
   //Pegar a tag imagem
@@ -11,3 +11,4 @@ function ToggleMode() {
     img.setAttribute("src", "./assets/imgs/ordo.png")
   }
 }
+

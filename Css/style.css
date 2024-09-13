@@ -5,24 +5,29 @@
 }
 :root {
   --font: "adobehebrew-regular";
-  --line-height: 30px;
+  --font-mudar: "estrangeiro";
+  --line-height: 50px;
   --bg-color: black;
   --border-radius: 10px;
-  --border: ;
+  --border: 5px solid;
+  --margin: 1% auto;
   --border-color: white;
   --display: ;
-  --colorordo: rgb(154, 240, 252);
-  --colorSangue: white;
-  --colorMorte: white;
-  --colorConhecimento: white;
-  --colorMedo: white;
+  --colorordo: rgba(0, 65, 187, 0.705);
+  --colorSangue: rgb(180, 0, 0);
+  --colorMorte: rgb(172, 172, 172);
+  --colorConhecimento: rgb(173, 185, 0);
+  --colorenergia: rgb(148, 0, 104);
+  --colorMedo: rgb(0, 82, 102);
   --font-style: oblique;
   --font-size: 25px;
 }
 .oculto {
   --font: "estrangeiro";
-  --line-height: 30px;
+  --font-mudar: "adobehebrew-regular";
+  --line-height: 50px;
   --border: 5px solid;
+  --margin: 1% auto;
   --bg-bg-color: rgba(51, 48, 48, 0.363);
   --bg-color: rgb(22, 21, 21);
   --border-color: black;
@@ -33,8 +38,10 @@
   --colorConhecimento: rgb(173, 185, 0);
   --colorenergia: rgb(148, 0, 104);
   --colorMedo: rgb(0, 82, 102);
+  --font-style: oblique;
   --font-size: 25px;
-  }
+}
+
 @font-face {
   font-family: "adobehebrew-regular";
   src: url(./adobehebrew-regular.otf);
@@ -43,8 +50,8 @@
   font-family: "estrangeiro";
   src: url(./SinaisEstrangeiro-Regular.ttf);
 }
-body {  
-  background-color:var(--bg-color);
+body {
+  background-color: var(--bg-color);
 }
 
 body * {
@@ -55,9 +62,8 @@ body * {
 #container {
   align-items: center;
   justify-content: center;
-  width: 65%;
+  width: 100%;
   margin: auto;
-
 }
 
 #logo-ordo {
@@ -65,7 +71,7 @@ body * {
 }
 
 #logo-ordo img {
-  width: 50%;
+  width: 35%;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -115,15 +121,15 @@ ul li a {
   text-align: center;
 }
 #container-descrisao {
-  display: flex;  
-  width: 100%;
+  display: flex;
+  width: fit-content;
   border: 3px solid var(--border-color);
   border-radius: var(--border-radius);
   line-height: var(--line-height);
+  line-break: auto;
   align-items: center;
   justify-content: center;
   list-style: none;
-
   margin-bottom: 40px;
 }
 
@@ -134,56 +140,81 @@ ul li a {
 }
 #descrisao li {
   text-align: center;
-  margin: auto;
+  margin: 2px;
   padding: 15px;
 }
 
 #sangue {
-  border: var(--border) var(--colorSangue);
-  font-style: var(--font-style);
-  border-radius: var(--border-radius);
+  font: var(--font);
   color: var(--colorSangue);
+  font-style: var(--font-style);
+  font-family: var(--font-mudar);
+  line-height: var(--line-height);
+  border: var(--border) var(--colorSangue);
+  border-radius: var(--border-radius);
   font-size: var(--font-size);
+  margin: var(--margin);
 }
 #morte {
-  border: var(--border) var(--colorMorte);
-  font-style: var(--font-style);
+  font: var(--font);
   color: var(--colorMorte);
+  font-style: var(--font-style);
+  font-family: var(--font-mudar);
+  line-height: var(--line-height);
+  border: var(--border) var(--colorMorte);
   border-radius: var(--border-radius);
   font-size: var(--font-size);
+  margin: var(--margin);
 }
 
 #conhecimento {
-  border: var(--border) var(--colorConhecimento);
-  font-style: var(--font-style);
+  font: var(--font);
   color: var(--colorConhecimento);
+  font-style: var(--font-style);
+  font-family: var(--font-mudar);
+  line-height: var(--line-height);
+  border: var(--border) var(--colorConhecimento);
   border-radius: var(--border-radius);
   font-size: var(--font-size);
+  margin: var(--margin);
 }
 #energia {
+  font: var(--font);
   color: var(--colorenergia);
   font-style: var(--font-style);
+  font-family: var(--font-mudar);
+  line-height: var(--line-height);
   border: var(--border) var(--colorenergia);
   border-radius: var(--border-radius);
   font-size: var(--font-size);
+  margin: var(--margin);
 }
 #medo {
-  border: var(--border) var(--colorMedo);
-  font-style: var(--font-style);
+  font: var(--font);
   color: var(--colorMedo);
+  font-style: var(--font-style);
+  font-family: var(--font-mudar);
+  line-height: var(--line-height);
+  border: var(--border) var(--colorMedo);
   border-radius: var(--border-radius);
   font-size: var(--font-size);
+  margin: var(--margin);
 }
-#ordo{
-  border: var(--border) var(--colorordo);
-  font-style: var(--font-style);
+#ordo {
+  font: var(--font);
   color: var(--colorordo);
+  font-style: var(--font-style);
+  font-family: var(--font-mudar);
+  line-height: var(--line-height);
+  border: var(--border) var(--colorordo);
   border-radius: var(--border-radius);
-  font-size: var(--font-size)
+  font-size: var(--font-size);
+  margin: var(--margin);
 }
-
 
 t {
+  font-size: var(--font-size);
   display: var(--display);
   color: var(--colorordo);
+  text-decoration-line: underline;
 }
