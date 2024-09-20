@@ -15,9 +15,9 @@
   --display: ;
   --colorordo: rgba(0, 65, 187, 0.705);
   --colorSangue: rgb(180, 0, 0);
-  --colorMorte: rgb(172, 172, 172);
+  --colorMorte: rgb(31, 31, 31);
   --colorConhecimento: rgb(173, 185, 0);
-  --colorenergia: rgb(148, 0, 104);
+  --colorenergia: rgb(90, 3, 64);
   --colorMedo: rgb(0, 82, 102);
   --font-style: oblique;
   --font-size: 25px;
@@ -34,7 +34,7 @@
   --display: none;
   --colorordo: rgba(0, 65, 187, 0.705);
   --colorSangue: rgb(180, 0, 0);
-  --colorMorte: rgb(172, 172, 172);
+  --colorMorte: rgb(82, 82, 82);
   --colorConhecimento: rgb(173, 185, 0);
   --colorenergia: rgb(148, 0, 104);
   --colorMedo: rgb(0, 82, 102);
@@ -98,8 +98,8 @@ ul li a {
 
   padding: 16px 24px;
 
-  background: rgb(44, 44, 44);
-  border: 5px solid rgb(170, 146, 11);
+  background: rgb(0, 0, 0);
+  border: 2px solid rgb(7, 27, 71);
   border-radius: 8px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -144,6 +144,40 @@ ul li a {
   padding: 15px;
 }
 
+/* os botão*/
+
+#ordo:hover {
+  font: var(--font);
+  color: black;
+  background-color: var(--colorordo);
+  transition: background 1.5s;
+}
+#conhecimento:hover {
+  font: var(--font);
+  background-color: var(--colorSangue);
+  transition: background 1.5s;
+}
+#sangue:hover {
+  font: var(--font);
+  background-color: var(--colorMorte);
+  transition: background 1.5s;
+}
+#energia:hover {
+  font: var(--font);
+  background-color: var(--colorConhecimento);
+  transition: background 1.5s;
+}
+#morte:hover {
+  font: var(--font);
+  background-color: var(--colorenergia);
+  transition: background 1.5s;
+}
+#medo:hover {
+  font: var(--font);
+  color: var(--colorConhecimento);
+  background-color: var(--colorMedo);
+  transition: background 1.5s;
+}
 #sangue {
   font: var(--font);
   color: var(--colorSangue);
